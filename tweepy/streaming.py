@@ -130,7 +130,7 @@ class Stream:
                                 chunk_size=self.chunk_size
                             ):
                                 if line:
-                                    self.on_data(line)
+                                    self.on_data(line, body)
                                 else:
                                     self.on_keep_alive()
                                 if not self.running:
