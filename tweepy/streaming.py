@@ -118,6 +118,7 @@ class Stream:
                         verify=self.verify, proxies=self.proxies
                     ) as resp:
                         if resp.status_code == 200:
+                            import pdb; pdb.set_trace()
                             error_count = 0
                             http_error_wait = http_error_wait_start
                             network_error_wait = network_error_wait_step
